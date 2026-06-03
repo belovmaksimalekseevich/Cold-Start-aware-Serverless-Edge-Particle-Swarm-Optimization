@@ -1,0 +1,6 @@
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+pyyaml>=6.0
+pulp>=2.7        # для MILP-нижней границы (следующий шаг)
+pytest>=7.0      # опционально; тесты работают и без него (tests/run_all.py)
