@@ -1,7 +1,5 @@
 # CS-SE-PSO: Cold-Start-Aware Serverless Edge Particle Swarm Optimization
 
-**DCCN 2026 — Springer LNCS** | Task offloading in Mobile Edge Computing (MEC) with FaaS cold-start awareness
-
 ---
 
 ## Problem
