@@ -13,7 +13,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 from experiments._common import run_grid, aggregate
 
-METHODS = ['threshold', 'greedy', 'se-pso', 'cs-se-pso']
+METHODS = ['threshold', 'greedy', 'warm-greedy', 'se-pso', 'cs-se-pso']
 LAMBDAS = [5, 8, 12, 16, 20, 25, 30, 40]
 
 
@@ -30,9 +30,9 @@ def main(quick=False):
     for lam in (12, 30):
         print(f"\n--- λ={lam} ---")
         sub = agg[agg.value == lam]
-        print(f"{'метод':<11} {'mean':>7} {'p95':>7} {'p99':>7} {'CSR':>6}")
+        print(f"{'метод':<12} {'mean':>7} {'p95':>7} {'p99':>7} {'CSR':>6}")
         for _, r in sub.iterrows():
-            print(f"{r['method']:<11} {r['mean']:7.1f} {r['p95']:7.1f} "
+            print(f"{r['method']:<12} {r['mean']:7.1f} {r['p95']:7.1f} "
                   f"{r['p99']:7.1f} {r['csr']:6.2f}")
 
 

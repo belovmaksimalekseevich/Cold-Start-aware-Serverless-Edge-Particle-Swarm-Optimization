@@ -96,7 +96,7 @@ cs-se-pso/
 | User devices N | 50 |
 | Function types G | 12 |
 | Slot duration τ | 100 ms |
-| Arrival rate λ | 4–30 tasks/slot (Poisson) |
+| Arrival rate λ | 5–40 tasks/slot (Poisson) |
 | Function type distribution | Zipf(a = 1.3) |
 | Cold-start penalty T_cold | 50 ms (default), 0–200 ms sweep |
 | Keep-alive | 5 slots |

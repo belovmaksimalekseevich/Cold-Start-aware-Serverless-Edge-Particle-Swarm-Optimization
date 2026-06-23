@@ -13,7 +13,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 from experiments._common import run_grid, aggregate
 
-METHODS = ['threshold', 'greedy', 'se-pso', 'cs-se-pso']
+METHODS = ['threshold', 'greedy', 'warm-greedy', 'se-pso', 'cs-se-pso']
 TCOLD = [0.0, 0.01, 0.02, 0.03, 0.05, 0.075, 0.10, 0.15, 0.20]   # секунды
 
 
